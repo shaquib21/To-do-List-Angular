@@ -1,8 +1,10 @@
 #foot{
-    background-color: darkgray;
-    height: 40px;
+    background-color: #c2185b;
+    height: 60px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: end;
-    color: aliceblue;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding-top: 0.3em;
     letter-spacing: 3px;
+    position: relative;
 }

@@ -16,7 +16,7 @@
                 <mat-list-item role="listitem">Item 2</mat-list-item>
                 <mat-list-item role="listitem">Item 3</mat-list-item>
               </mat-list> -->
-        <table id="" >
+        <table style="width: 800px" >
                 
                 <tr>
                         <th> <h3>LABEL</h3> </th>
@@ -25,12 +25,17 @@
                         <th> <h3>ACTIONS</h3> </th>
                 </tr>
                 <tr *ngFor="let todo of todos">
-                        <td>{{todo.label}}</td>
-                        <td>{{todo.priority}}</td>
-                        <td>{{todo.done ? '&#10003;' : '&#10005;' }}</td>
+                        <td><mat-card><input name="cb" type="checkbox" id="cb">
+                                <p class="strikethrough">{{todo.label}}</p></mat-card>
+                                
+                                
+                        </td>
+                        <td><mat-card color="primary">{{todo.priority}}</mat-card></td>
+                        <td><mat-card>{{todo.done ? '&#10003;' : '&#10005;' }}</mat-card></td>
                         <td>
                                 <button mat-raised-button  (click)="deleteTodo(todo)">delete</button>
                         </td>
+                
                 </tr>
         </table>
 </div>
